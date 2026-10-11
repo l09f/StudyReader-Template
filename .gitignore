@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Local/private data
+inbox/
+archive/
+backups/
+
+# Logs and secrets
+*.log
+.env
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
