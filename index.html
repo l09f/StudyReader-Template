@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="可复用的个人知识阅读器模板" />
+    <title>ReaderTemplate</title>
+    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <main class="reader-shell" aria-label="ReaderTemplate 知识阅读器">
+      <aside class="sidebar course-sidebar" aria-label="课程目录">
+        <p class="eyebrow">STUDYREADER</p>
+        <h1 id="course-title">正在载入课程…</h1>
+        <nav id="chapter-list" class="chapter-list" aria-label="知识点目录"></nav>
+      </aside>
+
+      <section class="content-pane" aria-live="polite">
+        <div id="content" class="knowledge-content"></div>
+      </section>
+
+      <aside class="sidebar info-sidebar" aria-label="当前知识信息">
+        <p class="eyebrow">当前知识</p>
+        <dl id="knowledge-meta" class="knowledge-meta"></dl>
+        <div class="status-control" aria-label="掌握状态">
+          <p class="status-heading">更新掌握状态</p>
+          <div id="status-buttons" class="status-buttons"></div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
